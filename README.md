@@ -10,11 +10,9 @@ Build, train, and visualize intelligent agents in realistic simulated environmen
 
 ## 🎬 Demo
 
-![Demo](docs/demo.gif)
+> 🎥 **Demo video coming soon!** See [DEMO_QUICK_START.md](DEMO_QUICK_START.md) to create your own.
 
-**[📹 Watch Full Demo Video](docs/demo.mp4)** (2 min) | **[📸 More Screenshots](docs/screenshots/)**
-
-> Watch robots learn from random exploration to optimal behavior in real-time!
+Watch robots learn from random exploration to optimal behavior in real-time!
 
 ## ✨ Features
 
