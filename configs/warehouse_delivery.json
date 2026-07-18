@@ -1,0 +1,103 @@
+{
+  "name": "Warehouse Delivery Starter",
+  "description": "One autonomous cart learns to move from inbound staging to the packing lane while avoiding shelf rows.",
+  "world_size": [82, 56],
+  "metadata": {
+    "use_case": "single_robot_delivery",
+    "units": "meters",
+    "max_steps": 850,
+    "future_extensions": [
+      "multi_robot_task_assignment",
+      "lidar_noise",
+      "dynamic_people_and_forklifts",
+      "ros2_bridge",
+      "sim_to_real_policy_export"
+    ]
+  },
+  "robots": [
+    {
+      "name": "Cart A",
+      "position": [8, 46],
+      "max_speed": 8.0,
+      "acceleration": 18.0,
+      "sensor_range": 9.0
+    }
+  ],
+  "targets": [
+    {
+      "name": "Packing Lane",
+      "kind": "dropoff",
+      "position": [72, 46]
+    }
+  ],
+  "zones": [
+    {
+      "name": "Inbound",
+      "kind": "pickup",
+      "position": [8, 46],
+      "size": [10, 8]
+    },
+    {
+      "name": "Pack",
+      "kind": "dropoff",
+      "position": [72, 46],
+      "size": [10, 8]
+    },
+    {
+      "name": "Charge",
+      "kind": "charging",
+      "position": [72, 10],
+      "size": [9, 7]
+    }
+  ],
+  "obstacles": [
+    {
+      "name": "Shelf A1",
+      "kind": "shelf",
+      "position": [24, 17],
+      "size": [18, 3]
+    },
+    {
+      "name": "Shelf A2",
+      "kind": "shelf",
+      "position": [24, 29],
+      "size": [18, 3]
+    },
+    {
+      "name": "Shelf A3",
+      "kind": "shelf",
+      "position": [24, 41],
+      "size": [18, 3]
+    },
+    {
+      "name": "Shelf B1",
+      "kind": "shelf",
+      "position": [47, 13],
+      "size": [18, 3]
+    },
+    {
+      "name": "Shelf B2",
+      "kind": "shelf",
+      "position": [47, 25],
+      "size": [18, 3]
+    },
+    {
+      "name": "Shelf B3",
+      "kind": "shelf",
+      "position": [47, 37],
+      "size": [18, 3]
+    },
+    {
+      "name": "Packing Buffer",
+      "kind": "station",
+      "position": [66, 19],
+      "size": [6, 8]
+    },
+    {
+      "name": "Pillar",
+      "kind": "obstacle",
+      "position": [60, 8],
+      "size": 2.2
+    }
+  ]
+}

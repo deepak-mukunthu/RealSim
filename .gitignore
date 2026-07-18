@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.matplotlib-cache/
+
+# Training outputs
+checkpoints/
+logs/
+runs/
+models/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Personal/Private
+.env
+.env.local
+*.pem
+*.key
+.claude/
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
